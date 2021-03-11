@@ -24,8 +24,13 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	if (height_left > height_right)
 		return (height_left);
-	return (height_right);	
+	return (height_right);
 }
+/**
+ * binary_tree_balance - find the balance of the tree
+ * @tree: node
+ * Return: balance or 0 if root doesnt exist
+ */
 int binary_tree_balance(const binary_tree_t *tree)
 {
 	size_t balanceT_1 = 0;
